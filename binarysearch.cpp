@@ -37,10 +37,9 @@ int recursiveBinarySearch(int arr[], int left, int right, int target) {
 }
 
 int main() {
+    std::cout << __cplusplus << "\n";
     int arr[] = {2, 3, 4, 10, 40, 50, 60, 70};
-    int size = sizeof(arr) / sizeof(arr[0]);
-    int test_size = sizeof(arr);
-    std::cout << "Test size " << test_size << "\n";
+    int size = std::size(arr);
     int target = 10;
 
     std::cout << "Iterative Binary Search:\n";

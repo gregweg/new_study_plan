@@ -72,8 +72,7 @@ void printArray(int arr[], int size) {
 
 int main() {
     int arr[] = {12, 11, 13, 5, 6, 7};
-    // sizeof(arr) = 6 * int(4 bytes) = 24 / sizeof(arr[0])~4
-    int arr_size = sizeof(arr) / sizeof(arr[0]);
+    int arr_size = std::size(arr);
 
     std::cout << "Original array: ";
     printArray(arr, arr_size);
